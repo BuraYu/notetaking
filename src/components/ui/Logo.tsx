@@ -1,14 +1,12 @@
-import React from "react";
+import logoUrl from "../../assets/images/logo.svg";
 
-//type Props = {}
-
-const Logo = () => {
+const Header = () => {
   return (
     <div>
-      <p>Logo</p>
-      <p>notebook</p>
+      <img src={logoUrl} alt="Logo" className="w-10 h-10" />
+      <h1>Header</h1>
     </div>
   );
 };
 
-export default Logo;
+export default Header;

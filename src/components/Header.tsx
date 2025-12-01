@@ -1,9 +1,25 @@
-import React from "react";
+import logoLight from "../assets/images/logo.svg";
+import logoDark from "../assets/images/logo-dark.svg";
 
 const Header = () => {
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle("dark");
+  };
+
   return (
-    <div>
-      <h1>Header</h1>
+    <div className="px-8 py-6 dark:bg-neutral-800 bg-neutral-100 w-full">
+      <img
+        src={logoDark}
+        alt="Logo"
+        className="block dark:hidden"
+        onClick={toggleDarkMode}
+      />
+      <img
+        src={logoLight}
+        alt="Logo"
+        className="hidden dark:block"
+        onClick={toggleDarkMode}
+      />
     </div>
   );
 };
