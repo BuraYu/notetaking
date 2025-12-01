@@ -7,7 +7,7 @@ const Header = () => {
   };
 
   return (
-    <div className="px-8 py-6 dark:bg-neutral-800 bg-neutral-100 w-full">
+    <div className="px-4 py-3 sm:px-8 sm:py-6 dark:bg-neutral-800 bg-neutral-100 w-full">
       <img
         src={logoDark}
         alt="Logo"
